@@ -1,0 +1,24 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-kid-yellow: #ffd93d;
+  --color-kid-orange: #ff8c42;
+  --color-kid-cream: #fff5d7;
+  --color-kid-brown: #5c4033;
+  --font-display: 'Fredoka', system-ui, sans-serif;
+}
+
+html {
+  font-family: var(--font-display);
+}
+
+body {
+  margin: 0;
+  min-height: 100svh;
+  background: var(--color-kid-cream);
+  color: var(--color-kid-brown);
+}
+
+#root {
+  min-height: 100svh;
+}

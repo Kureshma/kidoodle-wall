@@ -1,0 +1,22 @@
+{
+  "name": "kidoodle-wall",
+  "private": true,
+  "description": "KIDOODLE WALL — full-stack drawing wall (React + Express + MySQL)",
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "scripts": {
+    "dev": "concurrently -n web,api -c cyan,magenta \"npm run dev -w frontend\" \"npm run dev -w backend\"",
+    "dev:frontend": "npm run dev -w frontend",
+    "dev:backend": "npm run dev -w backend",
+    "build": "npm run build -w frontend",
+    "start:backend": "npm run start -w backend"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
