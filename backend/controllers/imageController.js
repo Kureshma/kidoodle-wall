@@ -5,6 +5,7 @@ const pool = require('../config/db');
 const uploadsDir = path.join(__dirname, '..', 'uploads');
 
 async function listImages(req, res) {
+  
   try {
     const [rows] = await pool.query(
       `SELECT i.id, i.image, i.created_at, i.user_id, u.username
